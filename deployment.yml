@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: reactJs
+  name: reactjs
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: reactJs
+      app: reactjs
   template:
     metadata:
       labels:
-        app: reactJs
+        app: reactjs
     spec:
       containers:
-      - name: reactJs
-        image: mugu:123
+      - name: reactjs
+        image: prashanth63/reactjs:mmt
         ports:
         - containerPort: 80
 
@@ -22,10 +22,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: reactJs-service
+  name: reactjs-service
 spec:
   selector:
-    app: reactJs
+    app: reactjs
   ports:
     - protocol: TCP
       port: 3000
