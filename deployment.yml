@@ -16,7 +16,7 @@ spec:
       - name: reactjs
         image: prashanth63/reactjs:mmt
         ports:
-        - containerPort: 3000
+        - containerPort: 80
 
 ---
 apiVersion: v1
