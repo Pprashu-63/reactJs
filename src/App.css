@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.container{
+  display:flex;
+  flex-direction: column;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: 0 3px 6px 0 #555;
+  align-items: center;
+  justify-content: space-between;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image1{
+  height: 25px;
+  width: 25px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image2{
+  margin:15px;
+  height:36px;
+  width:36px;
+}
+.appName{
+  display: flex;
+  align-items: center;
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  width:50%;
+}
+.search-bar{
+  border: none;
+  outline: none;
+  margin-left: 15px;
+  font-size:15px;
+  font-style: italic;
+  width: 100%;
+  letter-spacing: 2px;
+}
+.recipeList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding:30px;
+  justify-content:space-evenly;
+  gap:20px;
+}
+.recipe{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  box-shadow:0 3px 10px 0 #aaa;
+  width:300px;
 }
-
-.App-link {
-  color: #61dafb;
+.cover{
+  height: 200px;
 }
+.recipeName{
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  text-align: center;
+}
+.ingredient{
+  font-size: 18px;
+  border:solid 1px green;
+  color: black;
+  margin-top: 10px;
+  margin-bottom:5px;
+  border-radius: 10px;
+  text-align: center;
+  color: green;
+  cursor: pointer;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.instruction{
+  font-size: 18px;
+  border:solid 1px red;
+  color: black;
+  text-align: center;
+  margin-bottom:5px;
+  color:red;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.deet{
+display: flex;
+flex-direction: column;
 }
